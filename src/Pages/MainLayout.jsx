@@ -366,7 +366,7 @@ const MainLayout = () => {
                   e.target.style.transform = "translateX(0)";
                 }}
               >
-                → ໂພສ
+                → ຜະລິດຕະພັນ
               </Link>
               <Link
                 to="/users"

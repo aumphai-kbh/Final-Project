@@ -70,10 +70,10 @@ const posts = [
   },
 ];
 
-const PostListPage = () => {
-  const font =
-    "'Noto Sans Lao', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
+const fontFamily =
+  "'Noto Sans Lao', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif";
 
+const PostListPage = () => {
   const randomDelay = () => `${Math.random() * 2}s`;
 
   const handleMouseMove = (e) => {
@@ -100,7 +100,7 @@ const PostListPage = () => {
     <div
       style={{
         padding: "40px",
-        fontFamily: font,
+        fontFamily,
         background: "linear-gradient(180deg, #0a0a2a, #1f1f4b)",
         minHeight: "100vh",
         color: "#fff",
@@ -121,7 +121,7 @@ const PostListPage = () => {
         <Link
           to={"/posts/new"}
           style={{
-            fontFamily: font,
+            fontFamily,
             padding: "14px 28px",
             background: "linear-gradient(90deg, #6a11cb, #2575fc)",
             color: "#fff",
@@ -163,14 +163,14 @@ const PostListPage = () => {
               alignItems: "center",
               padding: "25px",
               borderRadius: "25px",
-              background: "rgba(44,44,84,0.6)", // semi-transparent
-              backdropFilter: "blur(10px)", // glassmorphism blur
+              background: "rgba(44,44,84,0.6)",
+              backdropFilter: "blur(10px)",
               textDecoration: "none",
               color: "#fff",
               boxShadow:
                 "0 6px 20px rgba(0,0,0,0.5), 0 0 10px rgba(255,255,255,0.05) inset",
               transition: "transform 0.2s, boxShadow 0.2s, filter 0.2s",
-              fontFamily: font,
+              fontFamily,
               textAlign: "center",
               cursor: "pointer",
               animation: `float 3s ease-in-out infinite`,
